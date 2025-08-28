@@ -299,6 +299,17 @@ while True:
 #--------------------------------------------------------------------------
 #ii. Check if a given number is a prime number using a for
 #loop.
+n = int(input("enter a number: "))
+if n > 1:
+    for i in range(2,n):
+        if n % i == 0:
+            print(n,"is not a prime number")
+            break
+    else:
+        print(n,"is a prime number")  
+else:
+    print(n,"is not a prime number")
+      
 #-------------------------------------------------------------------------
 #iv. Print all numbers from 1 to 100 that are divisible by 3 and 5
 #using a for loop.
